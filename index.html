@@ -9,10 +9,20 @@
         body {
             text-align: center;
             font-family: Arial;
+            background: #111;
+            color: white;
         }
 
         canvas {
             background: black;
+            border: 3px solid white;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 
@@ -20,8 +30,15 @@
 
 <body>
 
-    <h2>Snake Game</h2>
+    <h1>Snake Game</h1>
+
     <h3>Score: <span id="score">0</span></h3>
+    <h3>High Score: <span id="highscore">0</span></h3>
+
+    <button id="startBtn">Start Game</button>
+    <button onclick="resetGame()">Restart</button>
+
+    <br>
 
     <canvas id="game" width="400" height="400"></canvas>
 
