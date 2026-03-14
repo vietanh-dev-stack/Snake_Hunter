@@ -19,8 +19,8 @@ let highScore = localStorage.getItem("snakeHighScore") || 0;
 highScoreDisplay.innerText = highScore;
 
 // âm thanh
-const eatSound = new Audio("eat.mp3");
-const gameOverSound = new Audio("gameover.mp3");
+const eatSound = new Audio("./sounds/eat.mp3");
+const gameOverSound = new Audio("./sounds/gameover.mp3");
 
 function initGame() {
 
